@@ -1,0 +1,54 @@
+console_title_template = '{{ .Shell }} in {{ .Folder }}'
+version = 3
+final_space = true
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'path'
+    style = 'plain'
+    background = 'transparent'
+    foreground = 'blue'
+    template = '{{ .Path }}'
+    
+    [blocks.segments.properties]
+      style = 'full'
+
+[[blocks]]
+  type = 'rprompt'
+  overflow = 'hidden'
+
+    [[blocks.segments]]
+      type = 'executiontime'
+      style = 'plain'
+      foreground = 'yellow'
+      background = 'transparent'
+      template = '{{ div .Ms 1000 }}s'
+
+      [blocks.segments.properties]
+        threshold = 1000
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'text'
+    style = 'plain'
+    foreground = 'magenta'
+    background = 'transparent'
+    template = ' ♥︎ ' #♥︎ ⦔
+
+[transient_prompt]
+  foreground = "magenta"
+  background = 'transparent'
+  template = ' ♥︎  '
+
+[secondary_prompt]
+  foreground = 'magenta'
+  background = 'transparent'
+  template = ' ❣ '
