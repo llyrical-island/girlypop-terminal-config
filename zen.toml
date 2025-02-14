@@ -41,7 +41,7 @@ final_space = true
     style = 'plain'
     foreground = 'magenta'
     background = 'transparent'
-    template = ' ♥︎ ' #♥︎ ⦔
+    template = ' ♥︎ ' #♥♦♠♣
 
 [transient_prompt]
   foreground = "magenta"
