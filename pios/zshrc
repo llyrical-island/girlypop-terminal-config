@@ -2,6 +2,7 @@
 [ "$TERM" = "xterm-ghostty" ] && export TERM=xterm-256color
 
 export PATH=$PATH:/home/llyric/.local/bin
+# export PATH=$PATH:/snap/bin
 
 # Set the directory we want to store zinit and plugins
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
